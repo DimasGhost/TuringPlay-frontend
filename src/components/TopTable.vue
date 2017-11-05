@@ -46,10 +46,12 @@ export default {
             user.gamesCnt = Math.floor(Math.random() * 1000);
             this.users.push(user);
         }
-        this.users.sort((a, b) => {
-            if (a.winrate > b.winrate)
+        this.users.sort((aStr, bStr) => {
+            let a = parseFloat(aStr.winrate);
+            let b = parseFloat(bStr.winrate);
+            if (a > b)
                 return -1;
-            if (a.winrate < b.winrate)
+            if (a < b)
                 return 1;
             return 0;
         });
