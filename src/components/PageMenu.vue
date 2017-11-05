@@ -18,9 +18,10 @@
                 </span>
                 <span>About</span>
             </a>
-            <a class="button is-outlined"
+            <a style="margin-left:0.1px"
+               class="button is-outlined"
                :class="[{'is-large': mqw > 950}, {'is-medium': mqw <= 950 && mqw > 400}, {'is-normal': mqw <= 400}]"
-                @click="openChat()"
+               @click="openChat()"
             >
                 <span class="icon">
                     <i class="fa fa-comments"></i>
