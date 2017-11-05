@@ -41,7 +41,7 @@
         min-width: 50px;
         min-height: 50px;
         margin: 0 auto;
-        padding: 15px 15px;
+        padding: 12px 12px;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
